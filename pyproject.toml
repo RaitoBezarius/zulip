@@ -1,3 +1,84 @@
+[tool.poetry]
+name = "zulip-backend"
+version = "6.0.0"
+description = ""
+authors = [""]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = {version = ">=4.1.0,<4.2.0", extras = ["argon2"]}
+typing-extensions = "^4.4.0"
+jinja2 = "^3.1.2"
+markdown = "^3.4.1"
+pygments = "^2.13.0"
+jsx-lexer = "^2.0.0"
+ipython = "^8.7.0"
+pillow = "^9.3.0"
+sqlalchemy = ">=1.4.0,<1.5.0"
+boto3 = "^1.26.28"
+mypy-boto3-s3 = "^1.26.0.post1"
+mypy-boto3-ses = "^1.26.0.post1"
+mypy-boto3-sns = "^1.26.22"
+mypy-boto3-sqs = "^1.26.0.post1"
+defusedxml = "^0.7.1"
+django-bitfield = "^2.2.0"
+django-statsd-mozilla = "^0.4.0"
+python-gcm = "^0.4"
+html2text = "^2020.1.16"
+premailer = "^3.10.0"
+pyjwt = "^2.6.0"
+pika = "^1.3.1"
+python-binary-memcached = "^0.31.1"
+django-bmemcached = "^0.3.0"
+python-dateutil = "^2.8.2"
+redis = "^4.4.0"
+sourcemap = "^0.2.1"
+tornado = "^6.2"
+orjson = "^3.8.3"
+aioapns = "^2.2"
+python-twitter = "^3.5"
+polib = "^1.1.1"
+virtualenv-clone = "^0.5.7"
+beautifulsoup4 = "^4.11.1"
+pyoembed = "^0.1.2"
+python-magic = "^0.4.27"
+py3dns = "^3.2.1"
+social-auth-app-django = "^5.0.0"
+cryptography = "^38.0.4"
+lxml = "^4.9.1"
+django-two-factor-auth = {extras = ["call", "phonenumberslite", "sms"], version = "^1.14.0"}
+stripe = "^5.0.0"
+django-sendfile2 = "^0.7.0"
+disposable-email-domains = "^0.0.85"
+jsonref = "^1.0.1"
+pyahocorasick = "^1.4.4"
+decorator = "^5.1.1"
+zxcvbn = "^4.4.28"
+requests = {extras = ["security"], version = "^2.28.1"}
+requests-oauthlib = "^1.3.1"
+openapi-core = "^0.16.2"
+openapi-schema-validator = "^0.3.4"
+sentry-sdk = "^1.11.1"
+tlds = "^2022070701"
+pyuca = "^1.2"
+backoff = "^2.2.1"
+pymongo = "^4.3.3"
+google-re2 = "^1.0"
+django-cte = "^1.2.1"
+django-scim2 = "^0.18.0"
+soupsieve = "^2.3.2.post1"
+circuitbreaker = "^1.4.0"
+django-stubs-ext = "^0.7.0"
+talon-core = {git = "https://github.com/zulip/talon", rev = "talon-core-split", subdirectory = "talon-core"}
+zulip = {git = "https://github.com/zulip/python-zulip-api", rev = "0.8.2", subdirectory = "zulip"}
+zulip-bots = {git = "https://github.com/zulip/python-zulip-api", rev = "0.8.2", subdirectory = "zulip_bots"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
 [tool.black]
 line-length = 100
 target-version = ["py38"]

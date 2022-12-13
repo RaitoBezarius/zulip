@@ -13,7 +13,6 @@ Jinja2
 
 # Needed for Markdown processing
 Markdown
-importlib-metadata ; python_version < "3.10"  # for Markdown
 Pygments
 jsx-lexer
 
@@ -75,9 +74,6 @@ django-bmemcached
 
 # Needed for zerver/tests/test_timestamp.py
 python-dateutil
-
-# Needed for time zone work
-backports.zoneinfo ; python_version < "3.9"
 
 # Needed for Redis
 redis
