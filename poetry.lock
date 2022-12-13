@@ -702,14 +702,6 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
-name = "jsonref"
-version = "1.0.1"
-description = "jsonref is a library for automatic dereferencing of JSON Reference objects for Python."
-category = "main"
-optional = false
-python-versions = ">=3.3,<4.0"
-
-[[package]]
 name = "jsonschema"
 version = "4.17.3"
 description = "An implementation of JSON Schema validation for Python"
@@ -1579,7 +1571,7 @@ requests = {version = ">=2.20", markers = "python_version >= \"3.0\""}
 [[package]]
 name = "talon-core"
 version = "1.6.0"
-description = ""
+description = "Mailgun library to extract message quotations and signatures."
 category = "main"
 optional = false
 python-versions = "*"
@@ -1601,7 +1593,6 @@ url = "https://github.com/zulip/talon"
 reference = "talon-core-split"
 resolved_reference = "137ea31ca506069f9a8bbddde0d0174f395a6893"
 subdirectory = "talon-core"
-
 [[package]]
 name = "tlds"
 version = "2022070701"
@@ -1742,11 +1733,10 @@ url = "https://github.com/zulip/python-zulip-api"
 reference = "0.8.2"
 resolved_reference = "d26416a1e79fabddf392bd4a528381305519fe52"
 subdirectory = "zulip"
-
 [[package]]
-name = "zulip_bots"
+name = "zulip-bots"
 version = "0.8.2"
-description = ""
+description = "Zulip's Bot framework"
 category = "main"
 optional = false
 python-versions = ">=3.6"
@@ -1766,7 +1756,6 @@ url = "https://github.com/zulip/python-zulip-api"
 reference = "0.8.2"
 resolved_reference = "d26416a1e79fabddf392bd4a528381305519fe52"
 subdirectory = "zulip_bots"
-
 [[package]]
 name = "zxcvbn"
 version = "4.4.28"
@@ -1778,7 +1767,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "32075eeebb67b797ef8573122d2220c990e8c566903d933e7710e481a3a65dfe"
+content-hash = "73d995c0ead0cb422bff83d224f742faf900e527dff02aa17fa3797ec712142e"
 
 [metadata.files]
 aioapns = [
@@ -2270,10 +2259,6 @@ jmespath = [
 joblib = [
     {file = "joblib-1.2.0-py3-none-any.whl", hash = "sha256:091138ed78f800342968c523bdde947e7a305b8594b910a0fea2ab83c3c6d385"},
     {file = "joblib-1.2.0.tar.gz", hash = "sha256:e1cee4a79e4af22881164f218d4311f60074197fb707e082e803b61f6d137018"},
-]
-jsonref = [
-    {file = "jsonref-1.0.1-py3-none-any.whl", hash = "sha256:010ca2752546309d8646cd743c64819c3e37bf710c07929bf9c1b409ee9ec6dd"},
-    {file = "jsonref-1.0.1.tar.gz", hash = "sha256:51d3e18b83ca7170ff51286a0e1a6719d8b7fcc7abdb16b189395a8536996b97"},
 ]
 jsonschema = [
     {file = "jsonschema-4.17.3-py3-none-any.whl", hash = "sha256:a870ad254da1a8ca84b6a2905cac29d265f805acc57af304784962a2aa6508f6"},
@@ -3121,7 +3106,7 @@ werkzeug = [
     {file = "Werkzeug-2.2.2.tar.gz", hash = "sha256:7ea2d48322cc7c0f8b3a215ed73eabd7b5d75d0b50e31ab006286ccff9e00b8f"},
 ]
 zulip = []
-zulip_bots = []
+zulip-bots = []
 zxcvbn = [
     {file = "zxcvbn-4.4.28.tar.gz", hash = "sha256:151bd816817e645e9064c354b13544f85137ea3320ca3be1fb6873ea75ef7dc1"},
 ]
